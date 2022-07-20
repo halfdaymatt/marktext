@@ -210,6 +210,8 @@ Parser.prototype.tok = function () {
       // TODO parse inline content if parameter markdown=1
       return this.renderer.html(this.token.text)
     }
+    case 'custom':
+    case 'vO':
     case 'paragraph': {
       return this.renderer.paragraph(this.inline.output(this.token.text))
     }

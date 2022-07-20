@@ -27,7 +27,8 @@ const MENU_ID_MAP = Object.freeze({
   // taskListMenuItem: 'ul',
   paragraphMenuItem: 'p',
   horizontalLineMenuItem: 'hr',
-  frontMatterMenuItem: 'frontmatter' // 'pre'
+  frontMatterMenuItem: 'frontmatter', // 'pre'
+  customMenuItem: 'custom'
 })
 
 const transformEditorElement = (win, type) => {
@@ -116,6 +117,10 @@ export const increaseHeading = win => {
   transformEditorElement(win, 'upgrade heading')
 }
 
+export const customType = win => {
+  transformEditorElement(win, 'custom type')
+}
+
 // --- Commands -------------------------------------------------------------
 
 export const loadParagraphCommands = commandManager => {
@@ -139,6 +144,7 @@ export const loadParagraphCommands = commandManager => {
   commandManager.add(COMMANDS.PARAGRAPH_TABLE, table)
   commandManager.add(COMMANDS.PARAGRAPH_TASK_LIST, taskList)
   commandManager.add(COMMANDS.PARAGRAPH_INCREASE_HEADING, increaseHeading)
+  commandManager.add(COMMANDS.PARAGRAPH_CUSTOM, customType)
 }
 
 // --- IPC events -------------------------------------------------------------

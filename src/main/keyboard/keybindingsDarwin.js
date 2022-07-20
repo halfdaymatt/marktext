@@ -64,6 +64,7 @@ export default new Map([
   ['paragraph.paragraph', 'Command+0'],
   ['paragraph.horizontal-line', 'Command+Option+-'],
   ['paragraph.front-matter', 'Command+Option+Y'],
+  ['paragraph.custom', 'Command+Option+Space'],
 
   // Format menu
   ['format.strong', 'Command+B'],

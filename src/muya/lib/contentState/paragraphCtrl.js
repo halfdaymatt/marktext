@@ -526,6 +526,7 @@ const paragraphCtrl = ContentState => {
       case 'heading 6':
       case 'upgrade heading':
       case 'degrade heading':
+      case 'custom':
       case 'paragraph': {
         if (start.key !== end.key) {
           return

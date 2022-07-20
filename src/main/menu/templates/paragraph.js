@@ -71,6 +71,16 @@ export default function (keybindings) {
     }, {
       type: 'separator'
     }, {
+      id: 'customMenuItem',
+      label: 'Custom',
+      type: 'checkbox',
+      accelerator: keybindings.getAccelerator('paragraph.custom'),
+      click (menuItem, focusedWindow) {
+        actions.customType(focusedWindow)
+      }
+    }, {
+      type: 'separator'
+    }, {
       id: 'tableMenuItem',
       label: 'Table',
       type: 'checkbox',

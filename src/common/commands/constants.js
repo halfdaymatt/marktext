@@ -73,6 +73,7 @@ const COMMANDS = Object.freeze({
   PARAGRAPH_TABLE: 'paragraph.table',
   PARAGRAPH_TASK_LIST: 'paragraph.task-list',
   PARAGRAPH_INCREASE_HEADING: 'paragraph.upgrade-heading',
+  PARAGRAPH_CUSTOM: 'paragraph.custom',
 
   TABS_CYCLE_BACKWARD: 'tabs.cycle-backward',
   TABS_CYCLE_FORWARD: 'tabs.cycle-forward',

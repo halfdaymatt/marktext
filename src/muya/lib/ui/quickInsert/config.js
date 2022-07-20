@@ -15,11 +15,12 @@ import quoteIcon from '../../assets/pngicon/quote_block/2.png'
 import todoListIcon from '../../assets/pngicon/todolist/2.png'
 import mathblockIcon from '../../assets/pngicon/math/2.png'
 import orderListIcon from '../../assets/pngicon/order_list/2.png'
-import flowchartIcon from '../../assets/pngicon/flowchart/2.png'
+/* import flowchartIcon from '../../assets/pngicon/flowchart/2.png'
 import sequenceIcon from '../../assets/pngicon/sequence/2.png'
 import plantumlIcon from '../../assets/pngicon/plantuml/2.png'
 import mermaidIcon from '../../assets/pngicon/mermaid/2.png'
-import vegaIcon from '../../assets/pngicon/chart/2.png'
+import vegaIcon from '../../assets/pngicon/chart/2.png' */
+import { customTags } from '../../custom/tags'
 import { isOsx } from '../../config'
 
 const COMMAND_KEY = isOsx ? '⌘' : 'Ctrl'
@@ -139,7 +140,8 @@ export const quickInsertObj = {
     label: 'ul-task',
     shortCut: `${OPTION_KEY}+${COMMAND_KEY}+X`,
     icon: todoListIcon
-  }],
+  }].concat(customTags)
+} /*,
   diagram: [{
     title: 'Vega Chart',
     subTitle: 'Render flow chart by vega-lite.js.',
@@ -166,4 +168,4 @@ export const quickInsertObj = {
     label: 'mermaid',
     icon: mermaidIcon
   }]
-}
+} */

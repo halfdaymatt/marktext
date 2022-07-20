@@ -351,6 +351,13 @@ const commands = [
         () => bus.$emit('paragraph', 'front-matter')
       )
     }
+  }, {
+    id: 'paragraph.custom',
+    execute: async () => {
+      focusEditorAndExecute(
+        () => bus.$emit('paragraph', 'custom')
+      )
+    }
   },
 
   // --------------------------------------------------------------------------

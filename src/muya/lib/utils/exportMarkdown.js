@@ -1,3 +1,5 @@
+import { customTags } from '../custom/tags'
+
 /**
  * Hi contributors!
  *
@@ -48,6 +50,11 @@ class ExportMarkdown {
         case 'hr': {
           this.insertLineBreak(result, indent)
           result.push(this.translateBlocks2Markdown(block.children, indent))
+          break
+        }
+        case 'cm': {
+          this.insertLineBreak(result, indent)
+          result.push(this.normalizeCustomText(block.children, indent))
           break
         }
         case 'span': {
@@ -177,6 +184,12 @@ class ExportMarkdown {
     const { text } = block
     const lines = text.split('\n')
     return lines.map(line => `${indent}${line}`).join('\n') + '\n'
+  }
+
+  normalizeCustomText (block, indent) {
+    let customType = customTags.filter(obj => obj.type === block.type)
+    let token = customType.wrapper
+    return `${token}${this.normalizeParagraphText(block, indent)}${token}`
   }
 
   normalizeHeaderText (block, indent) {

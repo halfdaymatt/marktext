@@ -23,6 +23,8 @@ import plantumlIcon from '../../../assets/pngicon/plantuml/2.png'
 import mermaidIcon from '../../../assets/pngicon/mermaid/2.png'
 import vegaIcon from '../../../assets/pngicon/chart/2.png'
 import footnoteIcon from '../../../assets/pngicon/footnote/2.png'
+import customIcon from '../../../custom/icons/pngicon/c40.png'
+import voiceOverIcon from '../../../custom/icons/pngicon/vO40.png'
 
 const FUNCTION_TYPE_HASH = {
   mermaid: mermaidIcon,
@@ -50,6 +52,14 @@ export default function renderIcon (block) {
   switch (type) {
     case 'p': {
       icon = paragraphIcon
+      break
+    }
+    case 'custom': {
+      icon = customIcon
+      break
+    }
+    case 'vO': {
+      icon = voiceOverIcon
       break
     }
     case 'figure':

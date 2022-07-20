@@ -43,6 +43,7 @@ const commandDescriptions = Object.freeze({
   'paragraph.heading-4': 'Paragraph: Transform into Heading 4',
   'paragraph.heading-5': 'Paragraph: Transform into Heading 5',
   'paragraph.heading-6': 'Paragraph: Transform into Heading 6',
+  'paragraph.custom': 'Paragraph: Transform into custom',
   'paragraph.upgrade-heading': 'Paragraph: Upgrade Heading',
   'paragraph.degrade-heading': 'Paragraph: Degrade Heading',
   'paragraph.table': 'Paragraph: Create Table',

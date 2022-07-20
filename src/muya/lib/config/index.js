@@ -31,7 +31,7 @@ export const BLOCK_TYPE7 = Object.freeze(htmlTags.filter(tag => {
 
 export const IMAGE_EXT_REG = /\.(?:jpeg|jpg|png|gif|svg|webp)(?=\?|$)/i
 
-export const PARAGRAPH_TYPES = Object.freeze(['p', 'h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'blockquote', 'pre', 'ul', 'ol', 'li', 'figure'])
+export const PARAGRAPH_TYPES = Object.freeze(['p', 'h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'blockquote', 'pre', 'ul', 'ol', 'li', 'vO', 'figure'])
 
 export const blockContainerElementNames = Object.freeze([
   // elements our editor generates
